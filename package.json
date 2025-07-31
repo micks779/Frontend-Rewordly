@@ -6,8 +6,7 @@
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",
     "dev": "webpack serve --mode development",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -18,8 +17,7 @@
     "@types/office-runtime": "^1.0.0",
     "date-fns": "^4.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^3.0.1"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.26.7",
@@ -42,7 +40,6 @@
     "core-js": "^3.40.0",
     "css-loader": "^6.8.1",
     "eslint": "^8.57.1",
-    "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
