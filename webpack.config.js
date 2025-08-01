@@ -1,18 +1,11 @@
-const devCerts = require("office-addin-dev-certs");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 const path = require("path");
 
-async function getHttpsOptions() {
-  const httpsOptions = await devCerts.getHttpsServerOptions();
-  return { ca: httpsOptions.ca, key: httpsOptions.key, cert: httpsOptions.cert };
-}
-
 module.exports = async (env, options) => {
   const dev = options.mode === "development";
-  const httpsOptions = await getHttpsOptions();
   
   const config = {
     mode: dev ? "development" : "production",
@@ -115,10 +108,6 @@ module.exports = async (env, options) => {
       },
       headers: {
         "Access-Control-Allow-Origin": "*"
-      },
-      server: {
-        type: 'https',
-        options: httpsOptions
       },
       port: 3000,
       hot: true
