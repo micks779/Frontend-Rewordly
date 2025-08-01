@@ -91,7 +91,8 @@ module.exports = async (env, options) => {
         patterns: [
           {
             from: "../manifest.xml",
-            to: "manifest.xml"
+            to: "manifest.xml",
+            noErrorOnMissing: true
           },
           {
             from: "../assets",
