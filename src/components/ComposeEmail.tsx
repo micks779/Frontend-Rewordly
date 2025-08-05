@@ -65,7 +65,7 @@ const ComposeEmail: React.FC<ComposeEmailProps> = ({ analysisContext }) => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          context: fullContext
+          compositionInstructions: fullContext
         }),
       });
 

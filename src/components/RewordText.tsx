@@ -76,8 +76,8 @@ const RewordText: React.FC = () => {
     try {
       // Create request body based on user selection
       const requestBody = selectedTone
-        ? { text: originalText, tone: selectedTone }
-        : { text: originalText, instructions: customInstructions.trim() };
+        ? { selectedText: originalText, toneInstructions: `Make this text more ${selectedTone}` }
+        : { selectedText: originalText, toneInstructions: customInstructions.trim() };
       
       const response = await fetch(`${process.env.REACT_APP_API_URL}/api/reword`, {
         method: 'POST',
