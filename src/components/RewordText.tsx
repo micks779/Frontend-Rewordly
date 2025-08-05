@@ -74,17 +74,17 @@ const RewordText: React.FC = () => {
     setError(null);
 
     try {
-      const instructions = customInstructions.trim() || `Make this text more ${selectedTone}`;
+      // Create request body based on user selection
+      const requestBody = selectedTone
+        ? { text: originalText, tone: selectedTone }
+        : { text: originalText, instructions: customInstructions.trim() };
       
       const response = await fetch(`${process.env.REACT_APP_API_URL}/api/reword`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          text: originalText,
-          instructions: instructions
-        }),
+        body: JSON.stringify(requestBody),
       });
 
       if (!response.ok) {
