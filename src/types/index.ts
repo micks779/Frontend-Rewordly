@@ -8,9 +8,14 @@ export interface AnalysisResult {
 }
 
 export interface RewordResult {
-  rewordedText: string;
+  success: boolean;
+  rewording_text: string;
+  original_text: string;
+  tone_instructions: string;
 }
 
 export interface ComposeResult {
-  composedEmail: string;
+  success: boolean;
+  composed_email: string;
+  composition_instructions: string;
 } 

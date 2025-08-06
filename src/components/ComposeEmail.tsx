@@ -74,7 +74,7 @@ const ComposeEmail: React.FC<ComposeEmailProps> = ({ analysisContext }) => {
       }
 
       const result: ComposeResult = await response.json();
-      setComposedEmail(result.composedEmail);
+      setComposedEmail(result.composed_email);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to compose email');
     } finally {

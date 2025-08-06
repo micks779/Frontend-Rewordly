@@ -92,7 +92,7 @@ const RewordText: React.FC = () => {
       }
 
       const result: RewordResult = await response.json();
-      setRewordedText(result.rewordedText);
+      setRewordedText(result.rewording_text);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to reword text');
     } finally {
