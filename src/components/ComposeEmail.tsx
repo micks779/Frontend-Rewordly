@@ -269,7 +269,7 @@ const ComposeEmail: React.FC<ComposeEmailProps> = ({ analysisContext }) => {
               <PrimaryButton
                 text="Replace in Outlook"
                 onClick={() => handleReplaceInOutlook()}
-                iconProps={{ iconName: 'Replace' }}
+                iconProps={{ iconName: 'Edit' }}
               />
             </Stack>
           </Stack>

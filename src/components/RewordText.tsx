@@ -216,7 +216,7 @@ const RewordText: React.FC = () => {
               <PrimaryButton
                 text="Replace in Outlook"
                 onClick={() => handleReplaceInOutlook()}
-                iconProps={{ iconName: 'Replace' }}
+                iconProps={{ iconName: 'Edit' }}
               />
             </Stack>
           </Stack>
