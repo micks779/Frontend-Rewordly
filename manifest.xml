@@ -10,8 +10,8 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Rewordly"/>
   <Description DefaultValue="AI-powered email assistant for rewording and composing emails"/>
-  <IconUrl DefaultValue="https://frontend-rewordly.vercel.app/assets/rewordly_logo_64x64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://frontend-rewordly.vercel.app/assets/rewordly_logo_128x128.png"/>
+  <IconUrl DefaultValue="https://frontend-rewordly.vercel.app/rewordly_logo_64x64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://frontend-rewordly.vercel.app/rewordly_logo_128x128.png"/>
   <SupportUrl DefaultValue="https://www.rewordly.com/help"/>
   <AppDomains>
     <AppDomain>https://frontend-rewordly.vercel.app</AppDomain>
@@ -73,9 +73,9 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="icon-16" DefaultValue="https://frontend-rewordly.vercel.app/assets/rewordly_logo_16x16.png"/>
-        <bt:Image id="icon-32" DefaultValue="https://frontend-rewordly.vercel.app/assets/rewordly_logo_32x32.png"/>
-        <bt:Image id="icon-80" DefaultValue="https://frontend-rewordly.vercel.app/assets/rewordly_logo_128x128.png"/>
+        <bt:Image id="icon-16" DefaultValue="https://frontend-rewordly.vercel.app/rewordly_logo_16x16.png"/>
+        <bt:Image id="icon-32" DefaultValue="https://frontend-rewordly.vercel.app/rewordly_logo_32x32.png"/>
+        <bt:Image id="icon-80" DefaultValue="https://frontend-rewordly.vercel.app/rewordly_logo_128x128.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="taskPaneUrl" DefaultValue="https://frontend-rewordly.vercel.app/taskpane.html"/>
